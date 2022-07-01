@@ -11,10 +11,27 @@
     color: #000;
     height: 4rem;
     
+    &__nav-item{
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: background-color 250ms;
+
+        &:hover{
+            background-color: #edd9bf;
+        }
+        
+        &.active{
+            background-color: #edd9bf;
+        }
+    }
+
     &__nav-link{
         padding: 0 10px;
         padding-top: 5px;
         text-transform: uppercase;
+
         &--italic{
             font-style: italic;
         }
@@ -27,4 +44,3 @@
     right: 1rem;
     -webkit-text-stroke: .5px white;
 }
-

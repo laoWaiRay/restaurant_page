@@ -10,19 +10,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Meie+Script&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-    <script defer src="bundle.js"></script>
   </head>
   <body>
     <nav class="navbar">
-        <a href="#" class="navbar__nav-link">About Us</a>
-        <a href="#" class="navbar__nav-link">Reservations</a>
-        <a href="#" class="navbar__nav-link">Locations</a>
-        <a href="#" class="navbar__nav-link">Contact</a>
-        <a href="#" class="navbar__nav-link navbar__nav-link--italic">Concepts</a>
+        <div class="navbar__nav-item navbar__nav-item--about"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--about">About Us </a>
+        </div>
+        <div class="navbar__nav-item navbar__nav-item--reservations"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--reservations">Reservations</a>
+        </div>
+        <div class="navbar__nav-item navbar__nav-item--locations"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--locations">Locations</a>
+        </div>
+        <div class="navbar__nav-item navbar__nav-item--contact"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--contact">Contact</a>
+        </div>
+        <div class="navbar__nav-item navbar__nav-item--concepts"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--italic navbar__nav-link--concepts">Concepts</a>
+        </div>
         <a href="#" class="fa-brands fa-instagram fa-lg"></a>
     </nav>
 
-    <div class="info">
+
+
+    <!--  Append this with JS -->
+
+    <!-- <div class="info">
       <div class="info-panel info-panel--about">
         <span class="info-panel__close">x</span>
         <h1 class="heading-primary">About Us</h1>
@@ -38,7 +51,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <!-- --------------------------  -->
 
     <div class="hero"></div>
 
@@ -46,7 +61,7 @@
       <header class="header">
         <div class="header__main">Mia Casa</div>
         <div class="header__sub">
-          <button class="header__sub-btn">Reserve</button>
+          <button class="header__sub-btn reservations-btn">Reserve</button>
         </div>   
       </header>
     </main>
