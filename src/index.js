@@ -1,5 +1,6 @@
 //Dependencies List
 import "./scss/main.scss";
-import image from "./img/hero.jpg";
+import heroImage from "./img/hero.jpg";
+import aboutImage from "./img/about.jpg";
 
 console.log('connected again!')
