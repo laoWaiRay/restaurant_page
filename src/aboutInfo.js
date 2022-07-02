@@ -5,10 +5,11 @@ const aboutInfo = () => {
 
     if(document.querySelector('.info')){
         document.querySelector('.info').remove();
-        navItems.forEach(item => {
-            item.classList.remove('active');
-        })
     }
+
+    navItems.forEach(item => {
+        item.classList.remove('active');
+    })
 
     document.querySelector('.navbar__nav-item--about').classList.add('active');
 

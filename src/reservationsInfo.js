@@ -1,14 +1,15 @@
-import aboutImage from "./img/about.jpg";
+import reservationsImage from "./img/reservations.jpg";
 
 const reservationsInfo = () => {
     const navItems = document.querySelectorAll('.navbar__nav-item');
 
     if(document.querySelector('.info')){
         document.querySelector('.info').remove();
-        navItems.forEach(item => {
-            item.classList.remove('active');
-        })
     }
+
+    navItems.forEach(item => {
+        item.classList.remove('active');
+    })
 
     document.querySelector('.navbar__nav-item--reservations').classList.add('active');
     
@@ -34,25 +35,33 @@ const reservationsInfo = () => {
     const infoPanelContentMain = document.createElement('div');
     infoPanelContentMain.classList.add('info-panel__content-main');
 
-    const imgAbout = document.createElement('img');
-    imgAbout.classList.add('img', 'img__about');
-    imgAbout.src = aboutImage;
+    const imgReservations = document.createElement('img');
+    imgReservations.classList.add('img', 'img__about');
+    imgReservations.src = reservationsImage;
 
     const infoPanelContentSecondary = document.createElement('div');
     infoPanelContentSecondary.classList.add('info-panel__content-secondary');
 
+    const reserveBtn = document.createElement('button');
+    reserveBtn.append('Reserve a Table');
+    reserveBtn.classList.add('reserve-btn')
+
     const p1 = document.createElement('p');
-    p1.append('Lorem ipsum dolor sit amet. Qui sunt maiores non iste vero ut eius adipisci est quasi libero. Et quaerat vero nam ratione consequatur ut laudantium quos qui quisquam voluptatem ea alias dignissimos. In quasi porro est quia quam aut ullam Quis et reiciendis velit rem alias repudiandae! Et excepturi autem sed voluptatem odio qui vitae minus sed dolorem cumque est voluptas culpa aut molestiae facere.');
+    p1.append('M - F: 9am - 12pm, 12am - 6pm.');
+    p1.style.whiteSpace = 'nowrap'
 
     const p2 = document.createElement('p');
-    p2.append('In galisum veniam sed incidunt possimus hic eius unde eos inventore dolor et dolores magni id sint eius et nisi velit. Qui vero aliquam qui autem tempore aut minima repellendus vel dicta ducimus est iusto mollitia est cumque quibusdam.');
+    p2.append('Weekends: 8am - 10pm.');
+
+    const p3 = document.createElement('p');
+    p3.append('Et dolorum rerum ab voluptatem voluptatum eum velit repellat? In aliquid eveniet eum nulla veritatis sed quod nisi ut distinctio ducimus ad laudantium laborum.');
 
     navBar.insertAdjacentElement('afterend', info)
     info.append(infoPanelAbout);
     infoPanelAbout.append(infoPanelClose, headingPrimary, infoPanelContent);
     infoPanelContent.append(infoPanelContentMain, infoPanelContentSecondary);
-    infoPanelContentMain.append(imgAbout);
-    infoPanelContentSecondary.append(p1,p2);
+    infoPanelContentMain.append(imgReservations);
+    infoPanelContentSecondary.append(p1, p2, p3, reserveBtn);
 
 
     infoPanelClose.addEventListener('click', ()=>{
