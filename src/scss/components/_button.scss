@@ -1,3 +1,20 @@
+.btn-primary{
+    padding: 1rem;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 1px;
+    z-index: 20;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.159);
+    }
+}
+
 .reserve-btn{
     padding: 1.5rem;
     color: black;
@@ -11,7 +28,7 @@
     display: block;
     margin: 0 auto;
     transition: all 200ms;
-    margin-top: 5rem;
+    margin-top: 4rem;
 
     &:hover{
         cursor: pointer;
@@ -22,3 +39,7 @@
         transform: translateY(-1px);
     }
 }
+
+// .btn-form{
+//     margin-top: -.5rem;
+// }

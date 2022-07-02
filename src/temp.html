@@ -324,16 +324,36 @@
     <!-- <div class="info">
       <div class="info-panel info-panel--about">
         <span class="info-panel__close">x</span>
-        <h1 class="heading-primary">About Us</h1>
-        <div class="info-panel__content">
-          <div class="info-panel__content-main">
-            <img class="img img__about" src="./images/about.jpg" alt="">
-          </div>
-          <div class="info-panel__content-secondary">
-            <p>
-              Lorem ipsum dolor sit amet. Qui sunt maiores non iste vero ut eius adipisci est quasi libero. Et quaerat vero nam ratione consequatur ut laudantium quos qui quisquam voluptatem ea alias dignissimos. In quasi porro est quia quam aut ullam Quis et reiciendis velit rem alias repudiandae! Et excepturi autem sed voluptatem odio qui vitae minus sed dolorem cumque est voluptas culpa aut molestiae facere.
-            </p>
-            <p>In galisum veniam sed incidunt possimus hic eius unde eos inventore dolor et dolores magni id sint eius et nisi velit. Qui vero aliquam qui autem tempore aut minima repellendus vel dicta ducimus est iusto mollitia est cumque quibusdam.</p>
+        <h1 class="heading-primary heading-primary--contact">Contact Us</h1>
+          <div class="info-panel__content info-panel__content--contact">
+            <form class="form" action="#">
+                <h2 class="heading-secondary">Contact Information</h2>
+                <div class="form__group">
+                  <label class="form__label" for="firstName">First Name:</label>
+                  <input type="text" class="form__input" id="firstName" placeholder="What's your first name?" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="lastName">Last Name:</label>
+                  <input type="text" class="form__input" id="lastName" placeholder="What's your last name?" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="email">Email:</label>
+                  <input type="text" class="form__input" id="email" placeholder="What's your email?" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="phoneNumber">Phone Number:</label>
+                  <input type="tel" class="form__input" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="What's your phone number?" required>
+                </div>
+                <h2 class="heading-secondary">Comments</h2>
+                <div class="form__group">
+                  <label class="form__label" for="comments">Your Feedback:</label>
+                  <textarea class="form__input" name="comments" id="comments" cols="30" rows="10" placeholder="Have a suggestion?" required></textarea>
+                </div>
+
+                <button class="btn-form btn-primary align-center">
+                  Submit
+                </button>
+            </form>
           </div>
         </div>
       </div>
@@ -347,7 +367,7 @@
       <header class="header">
         <div class="header__main">Mia Casa</div>
         <div class="header__sub">
-          <button class="header__sub-btn reservations-btn">Reserve</button>
+          <button class="btn-primary reservations-btn">Reserve</button>
         </div>   
       </header>
     </main>

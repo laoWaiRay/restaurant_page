@@ -4,7 +4,8 @@ import "./scss/main.scss";
 
 import aboutInfo from "./aboutInfo.js";
 import reservationsInfo from "./reservationsInfo.js";
-
+import contactInfo from "./contact.js";
+import conceptsInfo from "./conceptsInfo.js";
 
 // Query Selectors //
 const navBar = document.querySelector('.navbar');
@@ -34,6 +35,9 @@ navLinkLocations.addEventListener('click', ()=>{
     navLinkLocations.classList.add('active')
 })
 
+navLinkContact.onclick = contactInfo;
+
+navLinkConcepts.onclick = conceptsInfo;
 
 //smooth scrolling
 
