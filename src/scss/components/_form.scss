@@ -1,7 +1,7 @@
 .form{
     height: calc(100% - 8rem);
     width: clamp(60rem, 60%, 60rem);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.912);
     padding: 2rem;
     color: #000;
     font-size: 2rem;
@@ -20,6 +20,7 @@
         font-size: inherit;
         font-weight: inherit;
         color: inherit;
+        // background-color: transparent;
     }
 
     &__label{

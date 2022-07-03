@@ -114,7 +114,7 @@ const contactInfo = () => {
             formLabelComments.append('Your Feedback:')
 
     const btnForm = document.createElement('button');
-    btnForm.classList.add('btn-form', 'btn-primary', 'align-center');
+    btnForm.classList.add('btn-form', 'btn-primary', 'align-center', 'btn-contact');
     btnForm.append('Submit');
 
 
