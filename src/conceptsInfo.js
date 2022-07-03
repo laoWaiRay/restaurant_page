@@ -28,7 +28,7 @@ const conceptsInfo = () => {
     infoPanelClose.append('x');
 
     const headingPrimary = document.createElement('h1');
-    headingPrimary.classList.add('heading-primary');
+    headingPrimary.classList.add('heading-primary', 'heading-primary--concepts');
     headingPrimary.append('Concepts');
 
     const grid = document.createElement('div');
@@ -58,7 +58,7 @@ const conceptsInfo = () => {
     textBox1.classList.add('grid__textBox--1');
 
     const heading1 = document.createElement('h2');
-    heading1.classList.add('heading-secondary', 'heading-concepts');
+    heading1.classList.add('heading-secondary', 'heading-concepts', 'heading-concepts--1');
     heading1.append('Little Italy');
 
     const text1 = document.createElement('p');
@@ -69,18 +69,18 @@ const conceptsInfo = () => {
     textBox2.classList.add('grid__textBox--2');
     
     const heading2 = document.createElement('h2');
-    heading2.classList.add('heading-secondary', 'heading-concepts');
+    heading2.classList.add('heading-secondary', 'heading-concepts', 'heading-concepts--2');
     heading2.append('La Capitale');
 
     const text2 = document.createElement('p');
     text2.classList.add('grid__text', 'grid__text--2');
-    text2.append('Suscipit adipiscing bibendum est ultricies integer quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Amet aliquam id diam maecenas ultricies mi. Pellentesque nec nam aliquam sem et tortor consequat. Risus pretium quam vulputate dignissim suspendisse in est ante.')
+    text2.append('Suscipit adipiscing bibendum est ultricies integer quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Amet aliquam id diam maecenas ultricies mi. Pellentesque nec nam aliquam sem et tortor consequat.')
 
     const textBox3 = document.createElement('div');
     textBox3.classList.add('grid__textBox--3');
 
     const heading3 = document.createElement('h2');
-    heading3.classList.add('heading-secondary', 'heading-concepts');
+    heading3.classList.add('heading-secondary', 'heading-concepts', 'heading-concepts--3');
     heading3.append('La Pergola');
 
     const text3 = document.createElement('p');

@@ -43,14 +43,15 @@ navLinkConcepts.onclick = conceptsInfo;
 
 //smooth scrolling
 
-document.querySelector('a[href="#map-container"]').addEventListener('click', function (e){
-    e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+document.querySelectorAll('a[href="#map"]').forEach(link => {
+    link.addEventListener('click', function (e){
+        e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+    })
 })
-
 //Nav Toggler
 
 navToggler.addEventListener('click', ()=>{
@@ -64,7 +65,7 @@ navToggler.addEventListener('click', ()=>{
     }
 })
 
-let mql = window.matchMedia('(max-width: 600px)');   //media query list
+let mql = window.matchMedia('(max-width: 610px)');   //media query list
 
 window.addEventListener('resize', ()=>{                                 //should probably throttle this...
     if(mql.matches){

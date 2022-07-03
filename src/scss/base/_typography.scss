@@ -6,6 +6,10 @@
         text-align: center;
     }
 
+    &--concepts{
+        font-style: italic;
+    }
+
     @media only screen and (max-width:610px){
         text-align: center;
     }
@@ -29,4 +33,20 @@ p{
 .git-handle{
     color: rgb(114, 37, 191);
     font-weight: 400;
+}
+
+.heading-concepts{
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Mrs Saint Delafield', cursive;
+
+    &--1{
+        color: red;
+    }
+    &--2{
+        color: white;
+    }
+    &--3{
+        color: green;
+    }
 }

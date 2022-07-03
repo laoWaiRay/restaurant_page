@@ -9,3 +9,23 @@
     background-position: center;
     z-index: -1;
 }
+
+.footer-padding{
+    background-color: transparent;
+    height: 4rem;
+    width: 100%;
+
+    @media only screen and (max-width:610px){
+        height: 15rem;
+    }
+   
+}
+
+.map-container{
+    height: calc(100vh - 8rem);
+    width: 100%;
+
+    @media only screen and (max-width:610px){
+        height: calc(100vh - 20rem);
+    }
+}

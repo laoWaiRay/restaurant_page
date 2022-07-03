@@ -12,7 +12,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             title: 'Restaurant Landing Page',
-            template: path.resolve(__dirname, 'src/temp.html')
+            template: path.resolve(__dirname, 'src/temp.html'),
         }),
     ],
     output: {
