@@ -33,7 +33,7 @@ const aboutInfo = () => {
     infoPanelContent.classList.add('info-panel__content');
 
     const infoPanelContentMain = document.createElement('div');
-    infoPanelContentMain.classList.add('info-panel__content-main');
+    infoPanelContentMain.classList.add('info-panel__content-main', 'info-panel__content-main--about');
 
     const imgAbout = document.createElement('img');
     imgAbout.classList.add('img', 'img__about');

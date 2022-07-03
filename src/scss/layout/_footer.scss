@@ -17,11 +17,23 @@
         &--link{
             margin-left: -10px;
         }
+
+        &:first-child{
+            @media only screen and (max-width:610px){
+                border-right: 1px solid rgba(0, 0, 0, 0.443);
+            }
+        }
+
+        
     }
 
     .odin-logo{
         height: 3.5rem;
         margin: 0 -2rem;
+
+        @media only screen and (max-width:610px){
+            margin: 0 -7rem;
+        }
     }
 
     .git-cat{
@@ -31,6 +43,10 @@
         &:hover{
             transform: rotate(360deg);
         }
+    }
+
+    @media only screen and (max-width:610px){
+        height: 9rem;
     }
 }
 

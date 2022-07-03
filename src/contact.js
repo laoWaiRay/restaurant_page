@@ -35,7 +35,7 @@ const contactInfo = () => {
     form.classList.add('form');
 
     const headingSecondary = document.createElement('h2');
-    headingSecondary.classList.add('heading-secondary');
+    headingSecondary.classList.add('heading-secondary', 'heading-secondary--contactForm');
     headingSecondary.append('Contact Information');
 
     const formGroupName1 = document.createElement('div');
@@ -95,7 +95,7 @@ const contactInfo = () => {
             formInputPhoneNumber.setAttribute('required', '');
 
     const headingSecondary2 = document.createElement('h2');
-    headingSecondary2.classList.add('heading-secondary');
+    headingSecondary2.classList.add('heading-secondary', 'heading-secondary--contactForm');
     headingSecondary2.append('Comments')
 
     const formGroupComments = document.createElement('div');

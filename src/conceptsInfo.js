@@ -20,8 +20,8 @@ const conceptsInfo = () => {
     const info = document.createElement('div');
     info.classList.add('info');
 
-    const infoPanelAbout = document.createElement('div');
-    infoPanelAbout.classList.add('info-panel', 'info-panel--about');
+    const infoPanelConcepts = document.createElement('div');
+    infoPanelConcepts.classList.add('info-panel', 'info-panel--concepts');
 
     const infoPanelClose = document.createElement('span');
     infoPanelClose.classList.add('info-panel__close');
@@ -90,8 +90,8 @@ const conceptsInfo = () => {
 
 
     navBar.insertAdjacentElement('afterend', info)
-    info.append(infoPanelAbout);
-    infoPanelAbout.append(infoPanelClose, headingPrimary, grid);
+    info.append(infoPanelConcepts);
+    infoPanelConcepts.append(infoPanelClose, headingPrimary, grid);
     grid.append(img1Container, img2Container, img3Container, textBox1, textBox2, textBox3);
     img1Container.append(img1);
     img2Container.append(img2);

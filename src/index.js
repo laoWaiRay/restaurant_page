@@ -16,6 +16,8 @@ const navLinkLocations = document.querySelector('.navbar__nav-item--locations');
 const navLinkContact = document.querySelector('.navbar__nav-item--contact');
 const navLinkConcepts = document.querySelector('.navbar__nav-item--concepts');
 const navItems = document.querySelectorAll('.navbar__nav-item');
+const primaryNav = document.querySelector('.primary-navigation');
+const navToggler = document.querySelector('.toggler');
 
 
 // Event handlers //
@@ -47,4 +49,36 @@ document.querySelector('a[href="#map-container"]').addEventListener('click', fun
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
+})
+
+//Nav Toggler
+
+navToggler.addEventListener('click', ()=>{
+    const visibility = primaryNav.getAttribute('data-visible');
+    if(visibility === 'false'){
+        primaryNav.setAttribute('data-visible', 'true');
+        primaryNav.setAttribute('aria-expanded', 'true');
+    } else {
+        primaryNav.setAttribute('data-visible', 'false');
+        primaryNav.setAttribute('aria-expanded', 'false');
+    }
+})
+
+let mql = window.matchMedia('(max-width: 600px)');   //media query list
+
+window.addEventListener('resize', ()=>{                                 //should probably throttle this...
+    if(mql.matches){
+        primaryNav.setAttribute('data-visible', 'false');
+        primaryNav.setAttribute('aria-expanded', 'false');
+    }
+})
+
+
+const navLinks = document.querySelectorAll('.navbar__nav-item');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        primaryNav.setAttribute('data-visible', 'false');
+        primaryNav.setAttribute('aria-expanded', 'false');
+        console.log('clicked')
+    })
 })

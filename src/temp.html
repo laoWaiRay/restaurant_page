@@ -298,68 +298,31 @@
     
   </head>
   <body>
+
+    
     <nav class="navbar">
-        <div class="navbar__nav-item navbar__nav-item--about"> 
-          <a href="#navbar" class="navbar__nav-link navbar__nav-link--about">About Us </a>
-        </div>
-        <div class="navbar__nav-item navbar__nav-item--reservations"> 
-          <a href="#" class="navbar__nav-link navbar__nav-link--reservations">Reservations</a>
-        </div>
-        <div class="navbar__nav-item navbar__nav-item--locations"> 
-          <a href="#map-container" class="navbar__nav-link navbar__nav-link--locations">Locations</a>
-        </div>
-        <div class="navbar__nav-item navbar__nav-item--contact"> 
-          <a href="#" class="navbar__nav-link navbar__nav-link--contact">Contact</a>
-        </div>
-        <div class="navbar__nav-item navbar__nav-item--concepts"> 
-          <a href="#" class="navbar__nav-link navbar__nav-link--italic navbar__nav-link--concepts">Concepts</a>
-        </div>
-        <a href="#" class="fa-brands fa-instagram fa-lg"></a>
+
+      <ul class="primary-navigation" id="primary-navigation" data-visible="false">
+        <li class="navbar__nav-item navbar__nav-item--about"> 
+          <a href="#navbar" class="navbar__nav-link navbar__nav-link--about" aria-hidden="true">About Us </a>
+        </li>
+        <li class="navbar__nav-item navbar__nav-item--reservations"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--reservations" aria-hidden="true">Reservations</a>
+        </li>
+        <li class="navbar__nav-item navbar__nav-item--locations"> 
+          <a href="#map-container" class="navbar__nav-link navbar__nav-link--locations" aria-hidden="true">Locations</a>
+        </li>
+        <li class="navbar__nav-item navbar__nav-item--contact"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--contact" aria-hidden="true">Contact</a>
+        </li>
+        <li class="navbar__nav-item navbar__nav-item--concepts"> 
+          <a href="#" class="navbar__nav-link navbar__nav-link--italic navbar__nav-link--concepts" aria-hidden="true">Concepts</a>
+        </li>
+      </ul>
+      <a href="#" class="fa-brands fa-instagram fa-xl"></a>
+      <button aria-controls="primary-navigation" aria-expanded="false" class="toggler fa-solid fa-bars fa-xl"></button>
+
     </nav>
-
-
-
-    <!--  Append this with JS -->
-
-    <!-- <div class="info">
-      <div class="info-panel info-panel--about">
-        <span class="info-panel__close">x</span>
-        <h1 class="heading-primary heading-primary--contact">Contact Us</h1>
-          <div class="info-panel__content info-panel__content--contact">
-            <form class="form" action="#">
-                <h2 class="heading-secondary">Contact Information</h2>
-                <div class="form__group">
-                  <label class="form__label" for="firstName">First Name:</label>
-                  <input type="text" class="form__input" id="firstName" placeholder="What's your first name?" required>
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="lastName">Last Name:</label>
-                  <input type="text" class="form__input" id="lastName" placeholder="What's your last name?" required>
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="email">Email:</label>
-                  <input type="text" class="form__input" id="email" placeholder="What's your email?" required>
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="phoneNumber">Phone Number:</label>
-                  <input type="tel" class="form__input" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="What's your phone number?" required>
-                </div>
-                <h2 class="heading-secondary">Comments</h2>
-                <div class="form__group">
-                  <label class="form__label" for="comments">Your Feedback:</label>
-                  <textarea class="form__input" name="comments" id="comments" cols="30" rows="10" placeholder="Have a suggestion?" required></textarea>
-                </div>
-
-                <button class="btn-form btn-primary align-center">
-                  Submit
-                </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- --------------------------  -->
 
     <div class="hero"></div>
 
@@ -408,10 +371,15 @@
 
     <footer class="footer">
         <span class="footer__item">
-          Photo by <a href="https://unsplash.com/@stefanjonhson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stefan Johnson</a> on <a href="https://unsplash.com/s/photos/restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          Photos by: <a href="https://unsplash.com/@stefanjonhson">Stefan Johnson</a>,
+          <a href="https://unsplash.com/@iamhiteshdewasi">Hitesh Dewasi</a>,
+          <a href="https://unsplash.com/@johnfo">John Fornander</a>,
+          <a href="https://unsplash.com/@stenslens">Sten Ritterfield</a>,
+          <a href="https://unsplash.com/@sevcovic23">Petr Sevcovic</a>
+
         </span>
         <span class="footer__item">
-          Made by laowairay for The Odin Project
+          Made by <a href="https://github.com/laoWaiRay" class="git-handle">laowairay</a> for The Odin Project
         </span>
         <span class="footer__item">
           <a class="footer__item--link" href="http://www.theodinproject.com">

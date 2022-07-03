@@ -5,13 +5,28 @@
     &--contact{
         text-align: center;
     }
+
+    @media only screen and (max-width:610px){
+        text-align: center;
+    }
 }
 
 .heading-secondary{
     margin-bottom: 1.5rem;
+
+    &--contactForm{
+        @media only screen and (max-width:610px){
+            display: none;
+        }
+    }
 }
 
 
 p{
     margin-bottom: 2rem;
+}
+
+.git-handle{
+    color: rgb(114, 37, 191);
+    font-weight: 400;
 }
